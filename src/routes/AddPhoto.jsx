@@ -27,6 +27,9 @@ const AddPhoto = () => {
     }).then(() => {
       navigate('/photos');
     })
+    .catch((err) => {
+      setError(err.message);
+    });
   };
 
   return (
